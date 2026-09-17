@@ -34,17 +34,18 @@ The application processes a 15-bed ICU unit, providing a longitudinal view of lu
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/Kimberlyt486/clinical_flask_app.git](https://github.com/Kimberlyt486/clinical_flask_app.git)
+   git clone https://github.com/Kimberlyt486/clinical_flask_app.git
    cd clinical_flask_app
 2. **Create the environment:**
     ```bash
     python -m venv venv
-3. **Activate it:**
+    source venv/bin/activate      #macOS/Linux
+    .\venv\Scripts\activate       # Windows
+    ```
+3. **Install Dependencies:**
     ```bash
-    .\venv\Scripts\activate
-4. **Install Dependencies:**
-    ```bash
-    pip install pandas flask
+    pip install -r requirements.txt
+    ```
 5. **Run the Clinical Pipeline:**
     ```bash
     python data_gen.py  (to create clinical_data.csv)
